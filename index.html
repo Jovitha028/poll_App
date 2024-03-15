@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polling App</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="registration">
+      <h2>Party Registration</h2>
+      <form id="party-registration-form">
+        <label for="party-name">Party Name:</label>
+        <input type="text" id="party-name" required>
+        <label for="party-id">Party ID:</label>
+        <input type="text" id="party-id" required>
+        <label for="party-image">Party Image:</label>
+        <input type="file" id="party-image" required><br><br>
+        <button type="submit">Register Party</button>
+      </form>
+    </div>
+
+    <div class="voting">
+      <h2>To Vote</h2>
+      <form id="voting-pallet-form">
+        <label for="voting-party">Party Name:</label>
+        <input type="text" id="voting-party" required>
+        <label for="voting-ev-id">EV ID:</label>
+        <input type="text" id="voting-ev-id" required>
+        <label for="voting-id">Voting ID:</label>
+        <input type="text" id="voting-id" required><br><br>
+        <button type="submit">Vote</button>
+      </form>
+    </div>
+
+    <div class="results">
+      <h2>Results</h2>
+      <table id="final-results-table">
+        <thead>
+          <tr>
+            <th>Party Name</th>
+            <th>EV ID</th>
+            <th>Voting ID</th>
+            <th>Polled On</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
